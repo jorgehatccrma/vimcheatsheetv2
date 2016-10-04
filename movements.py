@@ -56,7 +56,7 @@ moves.append(Movement('T', 'x', 'after {arg}', (-4, 0), 0))
 moves.append(Movement('F', 'x', 'find {arg}', (-5, 0), 0))
 moves.append(Movement(',', None, 'next {arg}', (-5, 1), 1))
 moves.append(Movement(';', None, 'previous {arg}', (-5, -1), 1))
-moves.append(Movement('^', None, 'first none-blank', (-6, 0), 0))
+moves.append(Movement('^', None, 'first non-blank', (-6, 0), 0))
 moves.append(Movement('0', None, 'start of line', (-7, 0), 0))
 
 
