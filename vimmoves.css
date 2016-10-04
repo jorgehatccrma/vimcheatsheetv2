@@ -1,0 +1,40 @@
+* {
+  font-family: "Source Code Pro", monospace;
+}
+
+tspan.keys, tspan.args {
+  font-weight: bold;
+  font-size: 180%;
+  fill: black;
+  text-anchor: middle;
+}
+
+tspan.args {
+  fill: green;
+  font-family: normal;
+  font-style: italic;
+  text-anchor: start;
+}
+
+tspan.desc {
+  fill: #700332;
+  opacity: 0.8;
+  font-size: 70%;
+  text-anchor: middle;
+}
+
+g.secondary {
+  font-size: 75%;
+}
+
+g.secondary tspan.keys {
+  fill: gray;
+}
+
+g.secondary tspan.args {
+  fill: lightgray;
+}
+
+g.secondary .desc {
+  fill: gray;
+}
