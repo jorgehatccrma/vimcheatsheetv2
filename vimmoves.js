@@ -13,18 +13,13 @@ const displayMoves = function() {
 	let svg = d3.select("div.main").append("svg:svg").attr("width", W).attr("height", H)
 							.append("g").attr("transform", "translate(" + W/2 + "," + H/2 + ")");
 
-	console.log(svg);
-
 	let nodes = svg.selectAll("text.node").data(data.moves);
-
-	console.log(data.moves);
 
 	nodes.enter()
 			.append("g")
 			.classed("node", true)
 			.classed("secondary", function(d){ return !d.level==0;})
 			.each(function(d, i) {
-				console.log("adding node");
 				let key_text = d3.select(this).append("text");
 				key_text.append("tspan").classed("keys", true).attr("x", 0);
 				key_text.append("tspan").classed("args", true);
@@ -49,7 +44,6 @@ const displayMoves = function() {
 
 	function wrap(text, width) {
 		text.each(function() {
-			console.log(d3.select(this).attr("dy"));
 			var text = d3.select(this),
 					words = text.text().split(/\s+/).reverse(),
 					word,
