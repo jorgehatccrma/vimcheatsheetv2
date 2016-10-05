@@ -8,7 +8,6 @@ var BGText = function() {
 			text_class = "bgtext-text";
 
 	function me(selection) {
-		console.log("selection", selection);
 
 		selection.each(function(d, i) {
 			let sel = d3.select(this);
