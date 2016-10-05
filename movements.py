@@ -5,6 +5,7 @@ from collections import namedtuple, OrderedDict
 Movement = namedtuple('Movement', ['keys', 'arg', 'desc', 'pos', 'level'])
 
 moves = []
+abs_moves = []
 
 # UP (previous)
 moves.append(Movement('k', None, 'up', (0, -1), 0))
@@ -60,6 +61,12 @@ moves.append(Movement('^', None, 'first non-blank', (-6, 0), 0))
 moves.append(Movement('0', None, 'start of line', (-7, 0), 0))
 
 
+abs_moves.append(Movement("''", None, 'last location', (0, 0), 0))
+abs_moves.append(Movement("'.", None, 'last edit', (1, 0), 0))
+abs_moves.append(Movement("#G", None, 'line #', (2, 0), 0))
+abs_moves.append(Movement("%", None, 'matching bracket', (3, 0), 0))
+
+
 import json
 
 def namedtuple_asdict(obj):
@@ -76,5 +83,5 @@ def namedtuple_asdict(obj):
         return obj
 
 #  print json.dumps(moves, sort_keys=False, indent=4, separators=(',', ': '))
-print json.dumps(dict(moves=namedtuple_asdict(moves), abs_moves=[]))
+print json.dumps(dict(moves=namedtuple_asdict(moves), abs_moves=namedtuple_asdict(abs_moves)))
 

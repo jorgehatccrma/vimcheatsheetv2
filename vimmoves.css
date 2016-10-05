@@ -38,3 +38,17 @@ g.secondary tspan.args {
 g.secondary .desc {
   fill: gray;
 }
+
+rect.boundary {
+  border: 1px solid gray;
+  fill-opacity: 0;
+}
+
+.main_axis {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 150%;
+  font-weight: 700;
+  fill: lightgray;
+  text-anchor: middle;
+}
