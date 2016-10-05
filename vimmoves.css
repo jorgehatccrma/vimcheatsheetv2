@@ -2,6 +2,16 @@
   font-family: "Source Code Pro", monospace;
 }
 
+div.main {
+  width: 100%;
+  text-align: center;
+}
+
+svg#canvas {
+  margin: auto;
+  display: block;
+}
+
 tspan.keys, tspan.args {
   font-weight: bold;
   font-size: 180%;
