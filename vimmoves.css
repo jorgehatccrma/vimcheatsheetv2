@@ -11,7 +11,7 @@ tspan.keys, tspan.args {
 
 tspan.args {
   fill: green;
-  font-family: normal;
+  font-family: "Roboto", normal;
   font-style: italic;
   text-anchor: start;
 }
@@ -44,11 +44,17 @@ rect.boundary {
   fill-opacity: 0;
 }
 
-.main_axis {
+.bg-text {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
-  font-size: 150%;
+  font-size: 100%;
   font-weight: 700;
-  fill: lightgray;
+  fill: white;
+  letter-spacing: 0.05em;
   text-anchor: middle;
 }
+
+.bg {
+  fill: lightgrey;
+}
+

@@ -14,13 +14,6 @@ const displayMoves = function() {
 	let main_g = svg.append("g").attr("transform", "translate(" + W/2 + "," + H/2 + ")");
 	let absolute_g = svg.append("g").attr("transform", "translate(80, " + 4*H/5 + ")");
 
-	main_g.append("text").classed("main_axis", true).attr("transform", "rotate(-90)").attr("dy", -W/2 + 40).text("left");
-	main_g.append("text").classed("main_axis", true).attr("transform", "rotate(90)").attr("dy", -W/2 + 40 + cell_w).text("right");
-	main_g.append("text").classed("main_axis", true).attr("dy", -H/2 + 25).text("up");
-	main_g.append("text").classed("main_axis", true).attr("dy", H/2 - 10).text("down");
-
-	absolute_g.append("text").classed("main_axis", true).attr("dy", -cell_h).attr("dx", cell_w * (data.abs_moves.length-1)/2).text("absolute movements")
-
 	const create_nodes = function(nodes) {
 		nodes.enter()
 				.append("g")
@@ -86,4 +79,28 @@ const displayMoves = function() {
 	}
 
 
+	const bg_label = function() {
+		return BGText()
+							.bg_class("bg")
+							.text_class("bg-text")
+							.padding({top: 1, right: 8, bottom: 1, left: 8});
+	};
+
+	const main_labels = [{text: "left", transform: "translate(" + (-W/2+40) + ",0) rotate(-90)"},
+						     		   {text: "right", transform: "translate(" + (W/2-40-cell_w) + ",0) rotate(90)"},
+								       {text: "up", transform: "translate(0, " + (-H/2+30) + ")"},
+											 {text: "down", transform: "translate(0, " + (H/2-15) + ")"}];
+
+	let mlabs = main_g.selectAll("g.main_axis").data(main_labels);
+	mlabs.enter().append("g").classed("main_axis", true);
+	mlabs.attr("transform", function(d) { return d.transform; })
+	    .call(bg_label());
+
+
+	const abs_labels = [{text: "absolute movements", transform: "translate(" + (data.abs_moves.length-1)*cell_w/2 + ", " + (-cell_h) + ")"}];
+
+	let alabs = absolute_g.selectAll("g.main_axis").data(abs_labels);
+	alabs.enter().append("g").classed("main_axis", true);
+	alabs.attr("transform", function(d) { return d.transform; })
+	     .call(bg_label());
 };
