@@ -27,7 +27,7 @@ tspan.args {
 }
 
 tspan.desc {
-  fill: #700332;
+  fill: firebrick;
   opacity: 0.8;
   font-size: 70%;
   text-anchor: middle;
@@ -65,6 +65,6 @@ rect.boundary {
 }
 
 .bg {
-  fill: lightgrey;
+  fill: firebrick;
 }
 

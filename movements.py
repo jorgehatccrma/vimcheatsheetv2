@@ -33,7 +33,6 @@ moves.append(Movement('n', None, 'next {arg}', (1, 5), 1))
 moves.append(Movement('*', None, 'find word under cursor', (2, 5), 1))
 moves.append(Movement('G', None, 'last line', (0, 6), 0))
 
-
 # RIGHT (forward)
 moves.append(Movement('l', None, 'right', (1, 0), 0))
 moves.append(Movement('e', None, 'end', (2, 0), 0))
@@ -45,7 +44,6 @@ moves.append(Movement('f', 'x', 'find {arg}', (5, 0), 0))
 moves.append(Movement(',', None, 'previous {arg}', (5, -1), 1))
 moves.append(Movement(';', None, 'next {arg}', (5, 1), 1))
 moves.append(Movement('$', None, 'end of line', (6, 0), 0))
-
 
 # LEFT (backward)
 moves.append(Movement('h', None, 'left', (-1, 0), 0))
@@ -60,17 +58,20 @@ moves.append(Movement(';', None, 'previous {arg}', (-5, -1), 1))
 moves.append(Movement('^', None, 'first non-blank', (-6, 0), 0))
 moves.append(Movement('0', None, 'start of line', (-7, 0), 0))
 
-
 abs_moves.append(Movement("''", None, 'last location', (0, 0), 0))
 abs_moves.append(Movement("'.", None, 'last edit', (1, 0), 0))
 abs_moves.append(Movement("#G", None, 'line #', (2, 0), 0))
 abs_moves.append(Movement("%", None, 'matching bracket', (3, 0), 0))
+abs_moves.append(Movement("g;", None, 'changelist backward', (4, 0), 0))
+abs_moves.append(Movement("g,", None, 'changelist forward', (4, 1), 1))
+abs_moves.append(Movement("C-o", None, 'jumplist backward', (5, 0), 0))
+abs_moves.append(Movement("C-i", None, 'jumplist forward', (5, 1), 1))
 
 
 import json
 
 def namedtuple_asdict(obj):
-    """from http://stackoverflow.com/a/32782927/1620879""" 
+    """from http://stackoverflow.com/a/32782927/1620879"""
     if hasattr(obj, "_asdict"): # detect namedtuple
         return OrderedDict(zip(obj._fields, (namedtuple_asdict(item) for item in obj)))
     elif isinstance(obj, basestring): # iterables - strings

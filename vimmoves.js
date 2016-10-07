@@ -1,6 +1,6 @@
 /* jslint esversion: 6 */
 
-const data = {"moves": [{"keys": "k", "arg": null, "desc": "up", "pos": [0, -1], "level": 0}, {"keys": "{", "arg": null, "desc": "paragraph", "pos": [0, -2], "level": 0}, {"keys": "(", "arg": null, "desc": "sentence", "pos": [1, -2], "level": 1}, {"keys": "H", "arg": null, "desc": "screen", "pos": [0, -3], "level": 0}, {"keys": "C-b", "arg": null, "desc": "page", "pos": [0, -4], "level": 0}, {"keys": "C-u", "arg": null, "desc": "1/2 page", "pos": [1, -4], "level": 1}, {"keys": "?", "arg": "text", "desc": "find {arg}", "pos": [0, -5], "level": 0}, {"keys": "N", "arg": null, "desc": "next {arg}", "pos": [1, -5], "level": 1}, {"keys": "n", "arg": null, "desc": "previous {arg}", "pos": [-1, -5], "level": 1}, {"keys": "#", "arg": null, "desc": "find word under cursor", "pos": [-2, -5], "level": 1}, {"keys": "gg", "arg": null, "desc": "first line", "pos": [0, -6], "level": 0}, {"keys": "j", "arg": null, "desc": "down", "pos": [0, 1], "level": 0}, {"keys": "}", "arg": null, "desc": "paragraph", "pos": [0, 2], "level": 0}, {"keys": ")", "arg": null, "desc": "sentence", "pos": [-1, 2], "level": 1}, {"keys": "L", "arg": null, "desc": "screen", "pos": [0, 3], "level": 0}, {"keys": "C-f", "arg": null, "desc": "page", "pos": [0, 4], "level": 0}, {"keys": "C-d", "arg": null, "desc": "1/2 page", "pos": [-1, 4], "level": 1}, {"keys": "/", "arg": "text", "desc": "find {arg}", "pos": [0, 5], "level": 0}, {"keys": "N", "arg": null, "desc": "previous {arg}", "pos": [-1, 5], "level": 1}, {"keys": "n", "arg": null, "desc": "next {arg}", "pos": [1, 5], "level": 1}, {"keys": "*", "arg": null, "desc": "find word under cursor", "pos": [2, 5], "level": 1}, {"keys": "G", "arg": null, "desc": "last line", "pos": [0, 6], "level": 0}, {"keys": "l", "arg": null, "desc": "right", "pos": [1, 0], "level": 0}, {"keys": "e", "arg": null, "desc": "end", "pos": [2, 0], "level": 0}, {"keys": "E", "arg": null, "desc": "delimited end", "pos": [2, 1], "level": 1}, {"keys": "w", "arg": null, "desc": "word", "pos": [3, 0], "level": 0}, {"keys": "W", "arg": null, "desc": "delimited word", "pos": [3, 1], "level": 1}, {"keys": "t", "arg": "x", "desc": "before {arg}", "pos": [4, 0], "level": 0}, {"keys": "f", "arg": "x", "desc": "find {arg}", "pos": [5, 0], "level": 0}, {"keys": ",", "arg": null, "desc": "previous {arg}", "pos": [5, -1], "level": 1}, {"keys": ";", "arg": null, "desc": "next {arg}", "pos": [5, 1], "level": 1}, {"keys": "$", "arg": null, "desc": "end of line", "pos": [6, 0], "level": 0}, {"keys": "h", "arg": null, "desc": "left", "pos": [-1, 0], "level": 0}, {"keys": "ge", "arg": null, "desc": "end", "pos": [-2, 0], "level": 0}, {"keys": "gE", "arg": null, "desc": "delimited end", "pos": [-2, -1], "level": 1}, {"keys": "b", "arg": null, "desc": "word", "pos": [-3, 0], "level": 0}, {"keys": "B", "arg": null, "desc": "delimited word", "pos": [-3, -1], "level": 1}, {"keys": "T", "arg": "x", "desc": "after {arg}", "pos": [-4, 0], "level": 0}, {"keys": "F", "arg": "x", "desc": "find {arg}", "pos": [-5, 0], "level": 0}, {"keys": ",", "arg": null, "desc": "next {arg}", "pos": [-5, 1], "level": 1}, {"keys": ";", "arg": null, "desc": "previous {arg}", "pos": [-5, -1], "level": 1}, {"keys": "^", "arg": null, "desc": "first non-blank", "pos": [-6, 0], "level": 0}, {"keys": "0", "arg": null, "desc": "start of line", "pos": [-7, 0], "level": 0}], "abs_moves": [{"keys": "''", "arg": null, "desc": "last location", "pos": [0, 0], "level": 0}, {"keys": "'.", "arg": null, "desc": "last edit", "pos": [1, 0], "level": 0}, {"keys": "#G", "arg": null, "desc": "line #", "pos": [2, 0], "level": 0}, {"keys": "%", "arg": null, "desc": "matching bracket", "pos": [3, 0], "level": 0}]};
+const data = {"moves": [{"keys": "k", "arg": null, "desc": "up", "pos": [0, -1], "level": 0}, {"keys": "{", "arg": null, "desc": "paragraph", "pos": [0, -2], "level": 0}, {"keys": "(", "arg": null, "desc": "sentence", "pos": [1, -2], "level": 1}, {"keys": "H", "arg": null, "desc": "screen", "pos": [0, -3], "level": 0}, {"keys": "C-b", "arg": null, "desc": "page", "pos": [0, -4], "level": 0}, {"keys": "C-u", "arg": null, "desc": "1/2 page", "pos": [1, -4], "level": 1}, {"keys": "?", "arg": "text", "desc": "find {arg}", "pos": [0, -5], "level": 0}, {"keys": "N", "arg": null, "desc": "next {arg}", "pos": [1, -5], "level": 1}, {"keys": "n", "arg": null, "desc": "previous {arg}", "pos": [-1, -5], "level": 1}, {"keys": "#", "arg": null, "desc": "find word under cursor", "pos": [-2, -5], "level": 1}, {"keys": "gg", "arg": null, "desc": "first line", "pos": [0, -6], "level": 0}, {"keys": "j", "arg": null, "desc": "down", "pos": [0, 1], "level": 0}, {"keys": "}", "arg": null, "desc": "paragraph", "pos": [0, 2], "level": 0}, {"keys": ")", "arg": null, "desc": "sentence", "pos": [-1, 2], "level": 1}, {"keys": "L", "arg": null, "desc": "screen", "pos": [0, 3], "level": 0}, {"keys": "C-f", "arg": null, "desc": "page", "pos": [0, 4], "level": 0}, {"keys": "C-d", "arg": null, "desc": "1/2 page", "pos": [-1, 4], "level": 1}, {"keys": "/", "arg": "text", "desc": "find {arg}", "pos": [0, 5], "level": 0}, {"keys": "N", "arg": null, "desc": "previous {arg}", "pos": [-1, 5], "level": 1}, {"keys": "n", "arg": null, "desc": "next {arg}", "pos": [1, 5], "level": 1}, {"keys": "*", "arg": null, "desc": "find word under cursor", "pos": [2, 5], "level": 1}, {"keys": "G", "arg": null, "desc": "last line", "pos": [0, 6], "level": 0}, {"keys": "l", "arg": null, "desc": "right", "pos": [1, 0], "level": 0}, {"keys": "e", "arg": null, "desc": "end", "pos": [2, 0], "level": 0}, {"keys": "E", "arg": null, "desc": "delimited end", "pos": [2, 1], "level": 1}, {"keys": "w", "arg": null, "desc": "word", "pos": [3, 0], "level": 0}, {"keys": "W", "arg": null, "desc": "delimited word", "pos": [3, 1], "level": 1}, {"keys": "t", "arg": "x", "desc": "before {arg}", "pos": [4, 0], "level": 0}, {"keys": "f", "arg": "x", "desc": "find {arg}", "pos": [5, 0], "level": 0}, {"keys": ",", "arg": null, "desc": "previous {arg}", "pos": [5, -1], "level": 1}, {"keys": ";", "arg": null, "desc": "next {arg}", "pos": [5, 1], "level": 1}, {"keys": "$", "arg": null, "desc": "end of line", "pos": [6, 0], "level": 0}, {"keys": "h", "arg": null, "desc": "left", "pos": [-1, 0], "level": 0}, {"keys": "ge", "arg": null, "desc": "end", "pos": [-2, 0], "level": 0}, {"keys": "gE", "arg": null, "desc": "delimited end", "pos": [-2, -1], "level": 1}, {"keys": "b", "arg": null, "desc": "word", "pos": [-3, 0], "level": 0}, {"keys": "B", "arg": null, "desc": "delimited word", "pos": [-3, -1], "level": 1}, {"keys": "T", "arg": "x", "desc": "after {arg}", "pos": [-4, 0], "level": 0}, {"keys": "F", "arg": "x", "desc": "find {arg}", "pos": [-5, 0], "level": 0}, {"keys": ",", "arg": null, "desc": "next {arg}", "pos": [-5, 1], "level": 1}, {"keys": ";", "arg": null, "desc": "previous {arg}", "pos": [-5, -1], "level": 1}, {"keys": "^", "arg": null, "desc": "first non-blank", "pos": [-6, 0], "level": 0}, {"keys": "0", "arg": null, "desc": "start of line", "pos": [-7, 0], "level": 0}], "abs_moves": [{"keys": "''", "arg": null, "desc": "last location", "pos": [0, 0], "level": 0}, {"keys": "'.", "arg": null, "desc": "last edit", "pos": [1, 0], "level": 0}, {"keys": "#G", "arg": null, "desc": "line #", "pos": [2, 0], "level": 0}, {"keys": "%", "arg": null, "desc": "matching bracket", "pos": [3, 0], "level": 0}, {"keys": "g;", "arg": null, "desc": "changelist backward", "pos": [4, 0], "level": 0}, {"keys": "g,", "arg": null, "desc": "changelist forward", "pos": [4, 1], "level": 1}, {"keys": "C-o", "arg": null, "desc": "jumplist backward", "pos": [5, 0], "level": 0}, {"keys": "C-i", "arg": null, "desc": "jumplist forward", "pos": [5, 1], "level": 1}]};
 
 var Padding = function(v) {
 	var me = {top: 20, right: 20, bottom: 20, left: 20};
@@ -18,13 +18,13 @@ var Padding = function(v) {
 			me.bottom = v[2];
 			me.left = v[3];
 	}
-	
+
 	me.horizontal = function horizontal() {
-		return me.left + me.right; 
+		return me.left + me.right;
 	};
 
 	me.vertical = function vertical() {
-		return me.left + me.right; 
+		return me.left + me.right;
 	};
 
 	return me;
@@ -39,12 +39,20 @@ const displayMoves = function() {
 
 	// for layout calculations
 	var minx=0, maxx=0, miny=0, maxy=0;
+	var absmaxx=0, absminx=0, absminy=0, absmaxy=0;
 
 	data.moves.forEach(function(d) {
 		minx = Math.min(minx, d.pos[0]);
 		maxx = Math.max(maxx, d.pos[0]);
 		miny = Math.min(miny, d.pos[1]);
 		maxy = Math.max(maxy, d.pos[1]);
+	});
+
+	data.abs_moves.forEach(function(d) {
+		absminx = Math.min(absminx, d.pos[0]);
+		absmaxx = Math.max(absmaxx, d.pos[0]);
+		absminy = Math.min(absminy, d.pos[1]);
+		absmaxy = Math.max(absmaxy, d.pos[1]);
 	});
 
 	const W = cell_w*(maxx-minx+1) + padding.horizontal(),
@@ -56,7 +64,7 @@ const displayMoves = function() {
 
 	let svg = d3.select("div.main").append("svg:svg").attr("id", "canvas").attr("width", W).attr("height", H);
 	let main_g = svg.append("g").attr("transform", "translate(" + (left_edge + padding.left) + "," + (top_edge + padding.top) + ")");
-	let absolute_g = svg.append("g").attr("transform", "translate(80, " + 4*H/5 + ")");
+	let absolute_g = svg.append("g").attr("transform", "translate(0, " + 4*H/5 + ")");
 
 	const create_nodes = function(nodes) {
 		nodes.enter()
@@ -141,7 +149,7 @@ const displayMoves = function() {
 	    .call(bg_label());
 
 
-	const abs_labels = [{text: "absolute movements", transform: "translate(" + (data.abs_moves.length-1)*cell_w/2 + ", " + (-cell_h) + ")"}];
+	const abs_labels = [{text: "absolute movements", transform: "translate(" + (absmaxx-absminx)*cell_w/2 + ", " + (-cell_h) + ")"}];
 
 	let alabs = absolute_g.selectAll("g.main_axis").data(abs_labels);
 	alabs.enter().append("g").classed("main_axis", true);
