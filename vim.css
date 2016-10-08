@@ -1,5 +1,15 @@
-* {
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
   font-family: "Roboto", sans-serif;
+}
+
+a, a:visited {
+  color: OrangeRed;
+  text-decoration: none;
+}
+
+a:hover {
+  color: Coral;
 }
 
 div.main {
@@ -69,9 +79,25 @@ rect.boundary {
   fill: firebrick;
 }
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+code {
+  font-family: "Source Code Pro", monospace;
+}
+
+.main-table code {
+  padding: 2px 0.5em;
+  font-weight: bold;
+  font-size: 150%;
+}
+
 th, .big {
   font-family: "Oswald", normal;
   font-size: 150%;
+  font-weight: bold;
 }
 
 td {
@@ -89,9 +115,13 @@ td ul {
   padding: 0.3em;
 }
 
+.examples {
+  font-size: 80%;
+}
+
 .examples th {
   font-family: "Source Code Pro", monospace;
-  font-size: 100%;
+  font-size: 120%;
   text-align: right;
 }
 
@@ -99,3 +129,5 @@ td ul {
   padding: 2px 10px;
   vertical-align: middle;
 }
+
+
