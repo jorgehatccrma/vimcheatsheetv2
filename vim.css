@@ -1,5 +1,5 @@
 * {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 div.main {
@@ -14,13 +14,14 @@ svg#canvas {
 
 tspan.keys, tspan.args {
   font-weight: bold;
+  font-family: "Source Code Pro", monospace;
   font-size: 180%;
   fill: black;
   text-anchor: middle;
 }
 
 tspan.args {
-  fill: green;
+  fill: CornflowerBlue;
   font-family: "Roboto", normal;
   font-style: italic;
   text-anchor: start;
@@ -68,3 +69,33 @@ rect.boundary {
   fill: firebrick;
 }
 
+th, .big {
+  font-family: "Oswald", normal;
+  font-size: 150%;
+}
+
+td {
+  text-align: left;
+  font-size: 80%;
+  vertical-align: top;
+}
+
+td ul {
+  list-style-type: none;
+}
+
+.big span {
+  font: inherit;
+  padding: 0.3em;
+}
+
+.examples th {
+  font-family: "Source Code Pro", monospace;
+  font-size: 100%;
+  text-align: right;
+}
+
+.examples td {
+  padding: 2px 10px;
+  vertical-align: middle;
+}

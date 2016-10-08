@@ -1,0 +1,19 @@
+* {
+  font-family: "Roboto", serif;
+}
+
+.main-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+}
+
+.main {
+  text-align: center;
+  color: DarkSlateGray;
+}
+
+.main a, .main a:visited {
+  color: DarkSlateGray;
+}

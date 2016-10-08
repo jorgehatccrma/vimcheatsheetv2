@@ -12,16 +12,17 @@
 <body>
 
   <script src="//d3js.org/d3.v3.min.js"></script>
-  <script src="vimmoves.js"></script>
+  <script src="vimcommands.js"></script>
   <script src="bgtext.js"></script>
 
-  <div class="main"></div>
+  <div class="main">
+    <p class="big"><span>verb</span><span>[modifier]</span><span>noun</span></p>
+  </div>
 
   <script type="text/javascript">
-    displayMoves();
+    displayCommands(d3.select("div.main"));
   </script>
 
 </body>
-
 
 </html>
