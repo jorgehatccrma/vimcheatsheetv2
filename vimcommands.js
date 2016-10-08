@@ -19,12 +19,17 @@ const data = {
 		{char: "s", desc: "sentence"},
 		{char: "p", desc: "paragraph"},
 		{char: "b", desc: "block (parentheses)"},
-		{char: "t", desc: "tag (e.g. <div>)"}
+		{char: "t", desc: "tag (e.g. <div>)"},
+		{char: "\"", desc: "surrounding \"\""},
+		{char: "'", desc: "surrounding ''"},
+		{char: ")", desc: "surrounding ()"},
+		{char: "}", desc: "surrounding {}"},
+		{char: "]", desc: "surrounding []"}
 	],
 	examples: [
 		{cmd: "dw", desc: "delete word", fulldesc: "from the cursor's location till the end of the word"},
 		{cmd: "diw", desc: "delete inside word", fulldesc: "the whole word, regardless of where in the word the cursor is"},
-		{cmd: "ciw", desc: "change inside word", fulldesc: "delete the current word and enter insert mode immediately"},
+		{cmd: "ci\"", desc: "change inside surrounding \"", fulldesc: "delete evenrything between \" \" and enter insert mode immediately"},
 		{cmd: "vas", desc: "visual around sentence", fulldesc: "visually select the whole sentence"},
 		{cmd: "yf)", desc: "yank till )", fulldesc: "copy fomr the cursor's position until the first occurrence of ')'"}
 	]
