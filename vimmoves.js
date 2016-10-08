@@ -64,7 +64,7 @@ const displayMoves = function() {
 
 	let svg = d3.select("div.main").append("svg:svg").attr("id", "canvas").attr("width", W).attr("height", H);
 	let main_g = svg.append("g").attr("transform", "translate(" + (left_edge + padding.left) + "," + (top_edge + padding.top) + ")");
-	let absolute_g = svg.append("g").attr("transform", "translate(0, " + 4*H/5 + ")");
+	let absolute_g = svg.append("g").attr("transform", "translate(" + cell_w/2 + ", " + 4*H/5 + ")");
 
 	const create_nodes = function(nodes) {
 		nodes.enter()
